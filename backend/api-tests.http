@@ -1,0 +1,33 @@
+
+### 1. Check whether the backend is running
+GET http://localhost:3000/api/health
+
+### 2. Get all tasks
+GET http://localhost:3000/api/tasks
+
+### 3. Create a task
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Learn Express.js"
+}
+
+### 4. Create another task
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Connect React to Express"
+}
+
+### 5. Mark task 1 as completed
+PATCH http://localhost:3000/api/tasks/1
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+### 6. Delete task 1
+DELETE http://localhost:3000/api/tasks/1
